@@ -24,6 +24,29 @@ namespace ArraysArithmeticMean
             Console.WriteLine("Среднее арифметическое ="+mean);
             Console.WriteLine("Количество елемента массива =" + arr.Length);
 
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+                if (arr[i] > 0)
+                {
+                    count++;
+                }
+            count = 0;
+            Array.Resize(ref arr1, arr1.Length + 1);
+            arr1[arr1.Length - 1] = arr1[count];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > 0)
+                {
+
+                    arr1[count] = arr[i];
+                    count++;
+                }
+
+            }
+
+            for (int i = 0; i < arr1.Length; i++)
+                Console.Write(arr1[i] + " ");
             Console.ReadKey();
         }
        
