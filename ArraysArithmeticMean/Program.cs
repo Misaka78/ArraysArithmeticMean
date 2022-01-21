@@ -14,13 +14,16 @@ namespace ArraysArithmeticMean
             int[] arr1 = new[] { 2, 5, 3, 24, 9 };
             int sum = 0;
             int mean = 0;
+
             for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
                 mean = sum / arr.Length;
             }
-          
+         
             Console.WriteLine("Среднее арифметическое ="+mean);
+            Console.WriteLine("Количество елемента массива =" + arr.Length);
+
             Console.ReadKey();
         }
        
