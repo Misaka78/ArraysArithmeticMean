@@ -44,9 +44,10 @@ namespace ArraysArithmeticMean
                 }
 
             }
-
+   
             for (int i = 0; i < arr1.Length; i++)
-                Console.Write(arr1[i] + " ");
+            Console.Write(arr1[i] + " ");
+            Console.WriteLine(arr1.Length);
             Console.ReadKey();
         }
        
