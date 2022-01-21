@@ -21,7 +21,6 @@ namespace ArraysArithmeticMean
             }
           
             Console.WriteLine("Среднее арифметическое ="+mean);
-           
             Console.ReadKey();
         }
        
