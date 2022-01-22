@@ -18,13 +18,12 @@ namespace ArraysArithmeticMean
             for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
-                mean = sum / arr.Length;
             }
-         
+            mean = sum / arr.Length;
             Console.WriteLine("Среднее арифметическое ="+mean);
             Console.WriteLine("Количество елемента массива =" + arr.Length);
 
-            int count = 0;
+            /*int count = 0;
             for (int i = 0; i < arr.Length; i++)
                 if (arr[i] > 0)
                 {
@@ -47,7 +46,21 @@ namespace ArraysArithmeticMean
    
             for (int i = 0; i < arr1.Length; i++)
             Console.Write(arr1[i] + " ");
-            Console.WriteLine(arr1.Length);
+            Console.WriteLine(arr1.Length);*/
+
+
+            List<int> lst = new List<int>();
+            foreach (var item in arr)
+            {
+                if (item >= 0)
+                {
+                    lst.Add(item);
+
+                }
+
+            }
+            int a = lst.Count;
+
             Console.ReadKey();
         }
        
